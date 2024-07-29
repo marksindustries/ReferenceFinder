@@ -1,5 +1,5 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_community.retrievers import ArxivRetriever
@@ -7,7 +7,7 @@ from langchain_community.document_loaders import ArxivLoader
 from langchain.prompts import PromptTemplate
 from fpdf import FPDF
 # Load environment variables
-load_dotenv()
+# load_dotenv()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 # Initialize LLM
